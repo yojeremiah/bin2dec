@@ -5,8 +5,6 @@
 }
 
 body {
-  /* background: #4b7bec; */
-  background: #c1666b;
   background: #576490;
   line-height: 1.5;
   font-family: 'Source Sans Pro', monospace;
@@ -19,11 +17,11 @@ body {
   border-radius: 5px;
   max-width: 400px;
   margin: auto;
-  /* margin-top: 1em; */
   padding: 1em;
   text-align: center;
   background: #fafafa;
   color: #171a21;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
 }
 
 .title {
@@ -45,11 +43,15 @@ body {
 
 .max-bits-label {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .max-bits-input {
   cursor: pointer;
+}
+
+.max-bits-output {
+  font-size: 1.2rem;
 }
 
 .binary-input {
@@ -78,7 +80,7 @@ body {
 }
 
 .error-msg {
-  margin-bottom: 1.5em;
+  margin-top: 1em;
   color: #a93f55;
   border: none !important;
 }
