@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>bin2dec | Binary to Decimal Convertor</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h2 class="title">bin2dec</h2>
+      <p class="subtitle">A simple binary-to-decimal convertor</p>
+
+      <!-- User Input -->
+      <div class="input-group">
+        <label for="max-bits" class="max-bits-label">Maximum # of bits</label>
+        <p class="max-bits-output"></p>
+        <input
+          type="range"
+          name="max-bits"
+          id="max-bits"
+          class="max-bits-input"
+          min="1"
+          max="256"
+          step="1"
+        />
+      </div>
+      <div class="input-group">
+        <label class="label" for="binary-input">Binary Input</label>
+        <input
+          type="text"
+          id="binary-input"
+          placeholder="Enter binary number..."
+          class="binary-input"
+        />
+        <p class="error-msg">
+          Error: Invalid input 😟
+          <br />
+          Please enter a binary number
+          <br />
+          Max # of bits: <span class="max-bits-error">00</span>
+        </p>
+      </div>
+
+      <!-- Display Output -->
+      <div class="output-group">
+        <p class="label">Decimal Output</p>
+        <p class="decimal-output">-</p>
+      </div>
+    </main>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
